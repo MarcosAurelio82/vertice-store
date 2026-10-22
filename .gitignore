@@ -1,0 +1,17 @@
+# System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Local dependencies and logs
+node_modules/
+*.log
+
+# Never commit credentials
+.env
+.env.*
+!.env.example

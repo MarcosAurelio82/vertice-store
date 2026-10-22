@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <title>Vértice Store | Moda masculina em Itaúna</title>
+  <meta name="description" content="Moda masculina com estilo, qualidade e praticidade em Itaúna-MG. Entrega na área urbana e pedidos pelo WhatsApp.">
+  <meta property="og:title" content="Vértice Store | Seu estilo começa aqui.">
+  <meta property="og:description" content="Moda masculina em Itaúna-MG. Peça pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/og-image.svg">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="delivery-bar">Entregas somente na área urbana de Itaúna-MG. Não atendemos zona rural.</div>
+  <header class="site-header" id="topo">
+    <a class="brand" href="#topo" aria-label="Vértice Store, início">VÉRTICE <span>STORE</span></a>
+    <button class="menu-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+      <a href="#colecao">Coleção</a><a href="#sobre">Informações</a><a href="#contato">Contato</a>
+    </nav>
+    <button class="cart-trigger" aria-label="Abrir carrinho"><span aria-hidden="true">⌑</span><b id="cart-count">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MODA MASCULINA · ITAÚNA, MG</p>
+        <h1>Seu estilo<br>começa aqui.</h1>
+        <p>Peças escolhidas para acompanhar sua rotina com estilo, qualidade e praticidade.</p>
+        <a class="button button-dark" href="#colecao">Ver coleção <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="arc"></div><p>VÉRTICE<br><em>STORE</em></p><span>01 / 26</span></div>
+    </section>
+
+    <section class="catalog section" id="colecao">
+      <div class="section-heading"><div><p class="eyebrow">A COLEÇÃO</p><h2>Essenciais para<br>o seu guarda-roupa.</h2></div><p class="collection-note">Disponibilidade confirmada no atendimento.</p></div>
+      <div class="filters" role="group" aria-label="Filtros de produtos">
+        <button class="filter active" data-filter="all">Todos</button><button class="filter" data-filter="Malha Peruana">Malha Peruana</button><button class="filter" data-filter="Oversized">Oversized</button><button class="filter" data-filter="Bermudas de Sarja">Bermudas de Sarja</button>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="local-info">
+      <div><p class="eyebrow">ATENDIMENTO LOCAL</p><h2>A moda certa,<br>perto de você.</h2></div>
+      <div class="local-rules"><p>Entregas somente na área urbana de <strong>Itaúna-MG</strong>. Não atendemos zona rural.</p><p>Frete fixo de <strong>R$ 10,00 por pedido.</strong></p><p>O dia e o horário da entrega serão sempre combinados pelo WhatsApp.</p></div>
+    </section>
+
+    <section class="benefits section" id="sobre">
+      <p class="eyebrow">POR QUE VÉRTICE?</p>
+      <div class="benefit-grid"><article><span>01</span><h3>Moda masculina</h3><p>Peças selecionadas para o seu estilo.</p></article><article><span>02</span><h3>Atendimento humano</h3><p>Fale diretamente conosco pelo WhatsApp.</p></article><article><span>03</span><h3>Entrega local</h3><p>Em toda a área urbana de Itaúna.</p></article><article><span>04</span><h3>Sem complicação</h3><p>Frete fixo e entrega combinada com você.</p></article></div>
+    </section>
+  </main>
+
+  <footer id="contato"><a class="brand" href="#topo">VÉRTICE <span>STORE</span></a><div><p>Seu estilo começa aqui.</p><p>Itaúna — MG</p></div><div><a href="https://wa.me/5537999698375" target="_blank" rel="noopener">WhatsApp: (37) 99969-8375</a><p>Frete fixo de R$ 10,00 · entrega a combinar.</p></div><small>Disponibilidade dos produtos confirmada durante o atendimento.</small></footer>
+
+  <dialog id="cart-dialog" class="cart-dialog"><div class="cart-panel"><div class="panel-head"><div><p class="eyebrow">SEU PEDIDO</p><h2>Carrinho</h2></div><button class="icon-button close-cart" aria-label="Fechar carrinho">×</button></div><div id="cart-items" class="cart-items"></div><div id="cart-empty" class="cart-empty"><p>Seu carrinho está vazio.</p><button class="text-button close-cart">Continuar comprando</button></div><div class="cart-summary"><div><span>Subtotal</span><strong id="subtotal">R$ 0,00</strong></div><div><span>Frete fixo</span><strong id="shipping">R$ 0,00</strong></div><div class="total"><span>Total</span><strong id="total">R$ 0,00</strong></div></div><label class="delivery-check"><input type="checkbox" id="urban-confirmation"><span>Confirmo que a entrega será na área urbana de Itaúna-MG.</span></label><p class="cart-help">Dia, horário e local da entrega serão combinados pelo WhatsApp.</p><button class="button button-dark checkout" id="checkout-button">Finalizar pelo WhatsApp <span>↗</span></button></div></dialog>
+  <dialog id="image-dialog" class="image-dialog"><button class="icon-button close-image" aria-label="Fechar imagem">×</button><img id="zoomed-image" src="" alt=""><p id="zoomed-caption"></p></dialog>
+
+  <script src="assets/js/products.js"></script><script src="assets/js/cart.js"></script><script src="assets/js/main.js"></script>
+</body>
+</html>
