@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#111111">
-  <title>Vértice Store | Moda masculina em Itaúna</title>
-  <meta name="description" content="Moda masculina com estilo, qualidade e praticidade em Itaúna-MG. Entrega na área urbana e pedidos pelo WhatsApp.">
+  <title>Vértice Store | Moda masculina e feminina em Itaúna</title>
+  <meta name="description" content="Moda masculina e feminina com estilo, qualidade e praticidade em Itaúna-MG. Entrega na área urbana e pedidos pelo WhatsApp.">
   <meta property="og:title" content="Vértice Store | Seu estilo começa aqui.">
   <meta property="og:description" content="Moda masculina em Itaúna-MG. Peça pelo WhatsApp.">
   <meta property="og:type" content="website">
@@ -27,7 +27,7 @@
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">MODA MASCULINA · ITAÚNA, MG</p>
+        <p class="eyebrow">MODA MASCULINA E FEMININA · ITAÚNA, MG</p>
         <h1>Seu estilo<br>começa aqui.</h1>
         <p>Peças escolhidas para acompanhar sua rotina com estilo, qualidade e praticidade.</p>
         <a class="button button-dark" href="#colecao">Ver coleção <span>↓</span></a>
@@ -36,13 +36,15 @@
     </section>
 
     <section class="catalog section" id="colecao">
-      <div class="section-heading"><div><p class="eyebrow">A COLEÇÃO</p><h2>Essenciais para<br>o seu guarda-roupa.</h2></div><p class="collection-note">Disponibilidade confirmada no atendimento.</p></div>
-      <div class="filters" role="group" aria-label="Filtros de produtos">
-        <button class="filter active" data-filter="all">Todos</button><button class="filter" data-filter="Malha Peruana">Malha Peruana</button><button class="filter" data-filter="Oversized">Oversized</button><button class="filter" data-filter="Bermudas de Sarja">Bermudas de Sarja</button>
+      <div class="section-heading"><div><p class="eyebrow">A COLEÇÃO</p><h2 id="catalog-title">Moda Masculina</h2></div><p class="collection-note">Peças fotografadas e prontas para você conhecer.</p></div>
+      <div class="catalog-switch" role="tablist" aria-label="Coleções">
+        <button class="collection-tab active" role="tab" aria-selected="true" data-gender="masculina">Moda Masculina</button>
+        <button class="collection-tab" role="tab" aria-selected="false" data-gender="feminina">Moda Feminina</button>
       </div>
+      <div id="category-groups" class="category-groups" aria-label="Categorias de produtos"></div>
+      <div id="catalog-empty" class="catalog-empty" hidden></div>
       <div class="product-grid" id="product-grid" aria-live="polite"></div>
     </section>
-
     <section class="local-info">
       <div><p class="eyebrow">ATENDIMENTO LOCAL</p><h2>A moda certa,<br>perto de você.</h2></div>
       <div class="local-rules"><p>Entregas somente na área urbana de <strong>Itaúna-MG</strong>. Não atendemos zona rural.</p><p>Frete fixo de <strong>R$ 10,00 por pedido.</strong></p><p>O dia e o horário da entrega serão sempre combinados pelo WhatsApp.</p></div>

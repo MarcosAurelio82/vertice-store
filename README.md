@@ -8,7 +8,7 @@ Abra `index.html` no navegador ou use qualquer servidor estático (por exemplo, 
 
 ## Produtos e preços
 
-Edite `assets/js/products.js`. Cada produto tem `id`, `name`, `category`, `size`, `price` e `image`.
+Edite `assets/js/products.js`. As categorias disponíveis ficam no objeto `catalog`; cada produto usa `id`, `gender`, `group`, `category`, `name`, `size`, `price` e `image`. Produtos só devem ser cadastrados quando a fotografia real estiver na pasta de imagens.
 
 ## Fotografias
 
