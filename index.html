@@ -36,12 +36,12 @@
     </section>
 
     <section class="catalog section" id="colecao">
-      <div class="section-heading"><div><p class="eyebrow">A COLEÇÃO</p><h2 id="catalog-title">Moda Masculina</h2></div><p class="collection-note">Peças fotografadas e prontas para você conhecer.</p></div>
-      <div class="catalog-switch" role="tablist" aria-label="Coleções">
-        <button class="collection-tab active" role="tab" aria-selected="true" data-gender="masculina">Moda Masculina</button>
-        <button class="collection-tab" role="tab" aria-selected="false" data-gender="feminina">Moda Feminina</button>
+      <div class="section-heading"><div><p class="eyebrow">A COLEÇÃO</p><h2 id="catalog-title">Escolha sua coleção.</h2></div><p class="collection-note">Navegue por coleção, tipo de peça e categoria.</p></div>
+      <div class="catalog-path" aria-label="Navegação do catálogo">
+        <button class="catalog-back" id="catalog-back" type="button" hidden>← Voltar</button>
+        <p id="catalog-progress">Escolha Moda Masculina ou Moda Feminina.</p>
       </div>
-      <div id="category-groups" class="category-groups" aria-label="Categorias de produtos"></div>
+      <div id="catalog-navigator" class="catalog-navigator" aria-live="polite"></div>
       <div id="catalog-empty" class="catalog-empty" hidden></div>
       <div class="product-grid" id="product-grid" aria-live="polite"></div>
     </section>
